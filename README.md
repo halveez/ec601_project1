@@ -29,3 +29,40 @@ https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.6384&rep=rep1&type=
 https://link.springer.com/chapter/10.1007/978-3-642-24393-6_10
 https://core.ac.uk/display/29409652
 http://etd.lib.metu.edu.tr/upload/12619166/index.pdf
+
+https://github.com/ThomasWangWeiHong/Cloud-Shadow-Detection-Based-on-Spectral-Indices
+
+Topic
+
+Shadows in aerial imaging can cause serious issues in 3D imaging -> leading to errors in object detection, agricultural analysis, building geometry detection, etc.
+
+Shadows arise both physical objects (trees, buildings, power lines, towers, diffuse shadows from trees, etc.) and cloud cover - much larger area of effect.
+
+Some methods include detection of increased hue values in shadow regions compared to non-shadow regions. (https://ieeexplore.ieee.org/abstract/document/1343090)
+
+Some other methods use green and blue color detection, however with manual thresholds.
+
+Additionally, some other methods use different color spaces from RGB, including HSV, C1C2C3, etc. https://towardsdatascience.com/understand-and-visualize-color-spaces-to-improve-your-machine-learning-and-deep-learning-models-4ece80108526
+
+Look at OS options - licenses, etc.
+
+First found on GitHub:
+
+Cloud-Shadow-Detection-Based-on-Spectral-Indices
+
+Python -> OpenCV packages -> Rasterio (geospatial data formatted as rasters - bitmaps)
+
+NASA open data
+
+OpenCV (Apache2 License)
+https://opencv.org/license/
+OpenCV automatically includes FFmpeg, which is licensed under LGPLv2.1
+Also includes other binaries:
+
+Rasterio:
+https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
+
+
+https://scihub.copernicus.eu/
+
+Email Osama to ask for the data from Norway (wheat, strawberry, etc.)
