@@ -2,8 +2,6 @@
 Zachary Halvorson
 Boston University Fall 2021
 
-test[[1]](#1)
-
 
 ## Multi-Spectral Imaging and Shadows
 
@@ -16,10 +14,11 @@ Generally for hyper-spectral imaging, the more narrow and greater number of tota
 
 ## Applications
 
-Some of the most common applications of hyper spectral imaging include agricultural monitoring, archaelogy, and large scale mining and production.[[1]](#1)
+Some of the most common applications of multi-spectral imaging include agricultural monitoring, environmental management, archaelogy, and large scale mining and production[[1]](#1). These industries will often use drone based imaging systems to monitor fertilization status, crop production, water retention in a field, and even the composition of the soil, among many other characteristics.
 
-What are applications of the topic?
-What is the societal significance of the research?
+One of the most well-known multi-spectral imaging systems and programs is NASA's Landsat[[2]](#2). Landsat 1 was launched in 1972, and to this point, there have been 8 different Landsat sattelitles, with a 9th being planned for launch on September 27, 2021. 
+
+The Landsat 8 for example has sensors that cover 11 different spectral bands, including blue, gree, red, NIR, SWIR, and thermal, among others. Not only do these projects provide data that benefits countless industries, but the production of these systems themselves (both the sensors and the carriers, whether satellites or drones) are massive economic projects that can help to sustain work in various industries directly (Landsat 9 was budgeted $650M by the US Congress).
 
 
 ## Literature review
@@ -37,6 +36,9 @@ As comprehensive as you can, research the different approaches and solutions in 
 
 NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 (https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb)
 
+Copernicus Open Access Hub https://scihub.copernicus.eu/dhus/#/home
+
+
 
 
 ### Open Source Implementations
@@ -49,8 +51,9 @@ Cloud-Shadow-Detection-Based-on-Spectral-Indices
 Python -> OpenCV packages -> Rasterio (geospatial data formatted as rasters - bitmaps)
 
 OpenDroneMap -> supports TIFFs where each layer is a specific spectral image
-NASA open data
+https://www.opendronemap.org/2020/02/odm-0-9-8-adds-multispectral-16bit-tiffs-support-and-moar/
 
+#### Licensing Considerations
 OpenCV (Apache2 License)
 https://opencv.org/license/
 OpenCV automatically includes FFmpeg, which is licensed under LGPLv2.1
@@ -59,8 +62,6 @@ Also includes other binaries:
 Rasterio:
 https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
 
-
-https://scihub.copernicus.eu/
 
 ## Reproduction of OS Results
 
@@ -73,7 +74,10 @@ https://scihub.copernicus.eu/
 Rosalba Calvini, Alessandro Ulrici, José Manuel Amigo,
 Chapter 3.9 - Growing applications of hyperspectral and multispectral imaging,
 https://doi.org/10.1016/B978-0-444-63977-6.00024-9.
-<a id="1">[1]</a> 
+<a id="1">[2]</a>
+Jenner, L. (2015, April 1). Landsat overview. NASA. 
+Retrieved September 16, 2021.
+https://www.nasa.gov/mission_pages/landsat/overview/index.html. 
 <a id="1">[1]</a> 
 <a id="1">[1]</a> 
 <a id="1">[1]</a> 
