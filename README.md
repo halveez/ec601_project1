@@ -16,7 +16,8 @@ Generally for hyper-spectral imaging, the more narrow and greater number of tota
 
 ## Applications
 
-Some of the most common applications of hyper spectral imaging include agricultural monitoring, 
+Some of the most common applications of hyper spectral imaging include agricultural monitoring, archaelogy, and large scale mining and production.[[1]](#1)
+
 What are applications of the topic?
 What is the societal significance of the research?
 
@@ -68,6 +69,18 @@ https://scihub.copernicus.eu/
 
 
 ## References
+<a id="1">[1]</a> 
+Rosalba Calvini, Alessandro Ulrici, José Manuel Amigo,
+Chapter 3.9 - Growing applications of hyperspectral and multispectral imaging,
+https://doi.org/10.1016/B978-0-444-63977-6.00024-9.
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
+<a id="1">[1]</a> 
 <a id="1">[1]</a> 
 
 
