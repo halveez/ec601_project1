@@ -1,15 +1,22 @@
-# ec601_project1
-Detection and elimination of shadows in multi-spectral images (Do a literature review of shadow detection and removal with focus on multispectral images)
+# EC601 Project 1
+Zachary Halvorson
+Boston University Fall 2021
 
-Problem Statement:  
-## What does the topic cover?
+test[[1]](#1)
 
-Detection and elimination of shadows in multi-spectral imaging covers both the detection of shadows in images, as well as the subsequent incorporation of that information with post-capture, and possible pre-capture processing of aerial imaging. These processes apply to ground based images with shadows, however depending on the implementation of the algorithm, separate tools must be developed to account for the vastly different image geometries when comparing ground based and aerial imaging.
+
+## Multi-Spectral Imaging and Shadows
+
+Detection and elimination of shadows in multi-spectral imaging covers both the detection of shadows in images, as well as the subsequent incorporation of that information with post-capture, and possible pre-capture processing of aerial imaging. These processes also apply to ground based images with shadows, however depending on the implementation of the algorithm, separate tools must be developed to account for the vastly different image geometries when comparing ground based and aerial imaging. This project will focus on aerial images, including space, aerial, and ground based systems.
+
+There is an important distinction between multi-spectral imaging, and hyper-spectral imaging, wherein multi-spectral imaging only detects limited wavelengths in discrete steps or bands, and where hyper-spectral imaging covers a broader range of wavelengths, often with much higher resolution and a greater number of spectral bands. 
+
+Generally for hyper-spectral imaging, the more narrow and greater number of total bands leads to significantly more information that can then be used to inform later analysis. Multi-spectral imaging can still provide interesting data, but is comparatively limited. Of course, this trade off coincides with hyper-spectral systems being much more expensive and rare in practice, where multi-spectral imaging systems are more affordable and arleady exist in many circumstances (orbitting satellites).
 
 
 ## Applications
 
-Some of the most common applications of 
+Some of the most common applications of hyper spectral imaging include agricultural monitoring, 
 What are applications of the topic?
 What is the societal significance of the research?
 
@@ -23,7 +30,15 @@ Some other methods use green and blue color detection, however with manual thres
 Additionally, some other methods use different color spaces from RGB, including HSV, C1C2C3, etc. https://towardsdatascience.com/understand-and-visualize-color-spaces-to-improve-your-machine-learning-and-deep-learning-models-4ece80108526
 
 As comprehensive as you can, research the different approaches and solutions in research community and industry
-## Open Source research
+## Open Source Research
+
+### Open Source Data
+
+NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 (https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb)
+
+
+
+### Open Source Implementations
 
 Research the different open source projects that touch the topic of your interest
 
@@ -46,9 +61,14 @@ https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
 
 https://scihub.copernicus.eu/
 
-## Duplicate the results if possible
+## Reproduction of OS Results
 
 
+
+
+
+## References
+<a id="1">[1]</a> 
 
 
 Google query dump for "multispectral imaging shadow" keyword search
