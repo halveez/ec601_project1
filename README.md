@@ -1,7 +1,5 @@
 # EC601 Project 1
-Zachary Halvorson
-
-Boston University Fall 2021
+Zachary Halvorson, Boston University Fall 2021
 
 
 ## Multi-Spectral Imaging and Shadows
@@ -39,21 +37,21 @@ Summary of https://ieeexplore.ieee.org/abstract/document/1343090 - urban images 
 
 ### Open Source Data
 
+Some available sources for open access data include:
+
 NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 [[8]](#8)
 
 USDA Farm Service Agency National Agriculture Imagery Program [[9]](#9)
 
-Copernicus Open Access Hub [[[10]](#10)
+Copernicus Open Access Hub [[10]](#10)
 
 ### Open Source Implementations
 
-Fortunately, there are many openly available guides and courses for multi-sepctral image analysis, with a particulary detailed option bein the Earth Data Analytics Online Certificate. Among other topics, this course includes a section on multi-spectral remote sensing, with many additional references for further learning[[11]](#11).
-
+Fortunately, there are many openly available guides and courses for multi-sepctral image analysis, with a particulary detailed option being the Earth Data Analytics Online Certificate. Among other topics, this course includes a section on multi-spectral remote sensing, with many additional references for further learning[[11]](#11).
 
 OpenDroneMap is an open source toolkit that in 2020 recently added support for multi-spectral imaging. Building upon this, FIELDimageR is an R package designed to take drone images from agricultural settings and perform crop analysis, including multi-spectral imaging for the use of vegetation growth, soil disturbance, and water retention. FIELDimageR even includes functions to remove clouds and weeds from composite images[[12]](#12).
 
-Sourced from Zhai et al.(2018)[[13]](#13), a Python implementation of their algorithm was posted on GitHub for open access. This algorithm uses a 
-
+Sourced from Zhai et al.(2018)[[13]](#13), a Python implementation of their algorithm was posted on GitHub for open access. This algorithm incorporates red, green, blue, and near infrared measurements to determine local thresholds for the presence of clouds, which are then optimized and filtered for most likely cloud artifacts, later used to produce a cloud mask that can be applied to the original set of input images for filtering. Components include median filters, cloud masks, shadow masks, spatial matching, reflective cloud indexing, and spectral indices.
 
 #### Licensing Considerations
 
@@ -66,27 +64,26 @@ OpenDroneMap is licensed under GNU Affero General Public License v3.0, with spec
 
 ## Reproduction of OS Results
 
-[[17]](#17)
-
-[[18]](#18)
+For this project, I reproduced the results in [[11]](#11), first by downloading the Cold Springs Fire data from the NAIP, and also establishing a working environment to test in Python.
 
 
 
 
 ## References
+
 <a id="1">[1]</a> 
 ColourLex. (2020, May 12). Multispectral imaging. ColourLex. Retrieved September 17, 2021
-https://colourlex.com/project/multispectral-imaging/. 
+https://colourlex.com/project/multispectral-imaging/
 
 <a id="2">[2]</a> 
 Rosalba Calvini, Alessandro Ulrici, José Manuel Amigo,
 Chapter 3.9 - Growing applications of hyperspectral and multispectral imaging,
-https://doi.org/10.1016/B978-0-444-63977-6.00024-9.
+https://doi.org/10.1016/B978-0-444-63977-6.00024-9
 
 <a id="3">[3]</a>
 Jenner, L. (2015, April 1). Landsat overview. NASA. 
 Retrieved September 16, 2021.
-https://www.nasa.gov/mission_pages/landsat/overview/index.html. 
+https://www.nasa.gov/mission_pages/landsat/overview/index.html
 
 <a id="4">[4]</a> 
 NASA. (n.d.). Data products table. 
@@ -103,33 +100,40 @@ Zi Y, Xie F, Jiang Z. A Cloud Detection Method for Landsat 8 Images Based on PCA
 <a id="7">[7]</a> 
 Jianjun Huang, Weixin Xie and Liang Tang, "Detection of and compensation for shadows in colored urban aerial images," Fifth World Congress on Intelligent Control and Automation (IEEE Cat. No.04EX788), 2004, pp. 3098-3100 Vol.4, doi: 10.1109/WCICA.2004.1343090.
 
-<a id="8">[8]</a> 
-https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb
+<a id="8">[8]</a>
+NASA. Global hyperspectral imaging Spectral-library of agricultural crops for Central ASIA V001.
+NASA's Open Data Portal. Retrieved September 17, 2021
+https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb. 
 
-<a id="9">[9]</a> 
+<a id="9">[9]</a>
+USDA. (n.d.). NAIP Imagery Information. NAIP imagery. Retrieved September 17, 2021
 https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
 
 <a id="10">[10]</a> 
+European Commission. (n.d.). Open Access Hub. Copernicus. Retrieved September 17, 2021
 https://scihub.copernicus.eu/dhus/#/home
 
 <a id="11">[11]</a> 
-https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/intro-multispectral-data/ 
+Earth Lab. (2018, April 14). Introduction to multispectral remote sensing data in Python.
+Earth Data Science. Retrieved September 17, 2021
+https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/intro-multispectral-data/
 
 <a id="12">[12]</a> 
+OpenDroneMap. (n.d.). Fieldimager. FIELDimageR: A Tool to Analyze Orthomosaic Images From Agricultural Field Trials in R. Retrieved September 17, 2021
 https://www.opendronemap.org/fieldimager/
 
 <a id="13">[13]</a> 
+ThomasWangWeiHong, Cloud-Shadow-Detection-Based-on-Spectral-Indices, (2020), GitHub repository,
 https://github.com/ThomasWangWeiHong/Cloud-Shadow-Detection-Based-on-Spectral-Indices
 
 <a id="14">[14]</a> 
+OpenCV. (2020, October 20). License. OpenCV. Retrieved September 17, 2021
 https://opencv.org/license/
 
 <a id="15">[15]</a> 
+Rasterio. (n.d.). Rasterio Documentation. Rasterio. Retrieved September 17, 2021
 https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
 
 <a id="16">[16]</a> 
+OpenDroneMap, ODM/License, (2016), GitHub repository,
 https://github.com/OpenDroneMap/ODM/blob/master/LICENSE
-
-<a id="17">[17]</a> 
-
-<a id="18">[18]</a> 
