@@ -30,8 +30,6 @@ Ibrahim et al.(2021), describes the use of Copernicus Sentinel-2 satellites for 
 
 Zi et al.(2018) proposed a combined method of a spectral thresholding function and a subseqent double-branch PCANet with SVM as well[[6]](#6). The images are first segmented on a pixel basis into larger superpixel regions, clustered by SLIC (Simple Linear Iterative Clustering), which clusters pixels together dependent on their location and color in the image. Once the image has been segmented, the different clusters are segmented loosely based on overall brightness with an adjustable threshold, taking into account other known characteristics of clouds such as their absorption differences due to wavelength, brightness, and intensity. Their algorithm then utilizes a double-branched PCANet, a specific type of deep learning network often used for images, with inputs including the raw multi-spectral data, and the previously processed data using spectral thresholds and other methods. As described in their paper, PCANet is faster to implement than standard CNNs, and ultimately combined with their other techniques was more effective in the detection of clouds and cloud shadows in target images. The authors mention that future work needs to be carried out to adapt this algorithm for various types of clouds and other environmental features, such as the presence of ice or snow in the background image.
 
-Summary of https://ieeexplore.ieee.org/abstract/document/1343090 - urban images [[7]](#7)
-
 
 ## Open Source Research
 
@@ -39,11 +37,13 @@ Summary of https://ieeexplore.ieee.org/abstract/document/1343090 - urban images 
 
 Some available sources for open access data include:
 
-NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 [[8]](#8)
+NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 [[7]](#7)
 
-USDA Farm Service Agency National Agriculture Imagery Program [[9]](#9)
+USDA Farm Service Agency National Agriculture Imagery Program [[8]](#8)
 
-Copernicus Open Access Hub [[10]](#10)
+Copernicus Open Access Hub [[9]](#9)
+
+United States Geological Survey Landsat Commercial Cloud Data Access [[10]](#10)
 
 ### Open Source Implementations
 
@@ -64,7 +64,7 @@ OpenDroneMap is licensed under GNU Affero General Public License v3.0, with spec
 
 ## Reproduction of OS Results
 
-For this project, I reproduced the results in [[11]](#11), first by downloading the Cold Springs Fire data from the NAIP, and also establishing a working environment to test in Python.
+For this project, I reproduced the results in [[11]](#11), first by downloading the Cold Springs Fire data from the NAIP and following their guide to establishing a working environment in Python.
 
 
 
@@ -97,21 +97,20 @@ Sensing. 2021; 13(4):736. https://doi.org/10.3390/rs13040736
 <a id="6">[6]</a> 
 Zi Y, Xie F, Jiang Z. A Cloud Detection Method for Landsat 8 Images Based on PCANet. Remote Sensing. 2018; 10(6):877. https://doi.org/10.3390/rs10060877
 
-<a id="7">[7]</a> 
-Jianjun Huang, Weixin Xie and Liang Tang, "Detection of and compensation for shadows in colored urban aerial images," Fifth World Congress on Intelligent Control and Automation (IEEE Cat. No.04EX788), 2004, pp. 3098-3100 Vol.4, doi: 10.1109/WCICA.2004.1343090.
-
-<a id="8">[8]</a>
+<a id="7">[7]</a>
 NASA. Global hyperspectral imaging Spectral-library of agricultural crops for Central ASIA V001.
 NASA's Open Data Portal. Retrieved September 17, 2021
 https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb. 
 
-<a id="9">[9]</a>
+<a id="8">[8]</a>
 USDA. (n.d.). NAIP Imagery Information. NAIP imagery. Retrieved September 17, 2021
 https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
 
-<a id="10">[10]</a> 
+<a id="9">[9]</a> 
 European Commission. (n.d.). Open Access Hub. Copernicus. Retrieved September 17, 2021
 https://scihub.copernicus.eu/dhus/#/home
+
+<a id="10">[10]</a> 
 
 <a id="11">[11]</a> 
 Earth Lab. (2018, April 14). Introduction to multispectral remote sensing data in Python.
