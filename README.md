@@ -111,6 +111,9 @@ European Commission. (n.d.). Open Access Hub. Copernicus. Retrieved September 17
 https://scihub.copernicus.eu/dhus/#/home
 
 <a id="10">[10]</a> 
+USGS. (n.d.). Landsat Commercial Cloud Data Access User Guide.
+Science Support. Retrieved September 17, 2021
+https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access?qt-science_support_page_related_con=1#qt-science_support_page_related_con. 
 
 <a id="11">[11]</a> 
 Earth Lab. (2018, April 14). Introduction to multispectral remote sensing data in Python.
