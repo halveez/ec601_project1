@@ -7,103 +7,128 @@ Boston University Fall 2021
 
 Detection and elimination of shadows in multi-spectral imaging covers both the detection of shadows in images, as well as the subsequent incorporation of that information with post-capture, and possible pre-capture processing of aerial imaging. These processes also apply to ground based images with shadows, however depending on the implementation of the algorithm, separate tools must be developed to account for the vastly different image geometries when comparing ground based and aerial imaging. This project will focus on aerial images, including space, aerial, and ground based systems.
 
-There is an important distinction between multi-spectral imaging, and hyper-spectral imaging, wherein multi-spectral imaging only detects limited wavelengths in discrete steps or bands, and where hyper-spectral imaging covers a broader range of wavelengths, often with much higher resolution and a greater number of spectral bands. 
+There is an important distinction between multi-spectral imaging, and hyper-spectral imaging, wherein multi-spectral imaging only detects limited wavelengths in discrete steps or bands, and where hyper-spectral imaging covers a broader range of wavelengths, often with much higher resolution and a greater number of spectral bands[[1]](#1). 
 
 Generally for hyper-spectral imaging, the more narrow and greater number of total bands leads to significantly more information that can then be used to inform later analysis. Multi-spectral imaging can still provide interesting data, but is comparatively limited. Of course, this trade off coincides with hyper-spectral systems being much more expensive and rare in practice, where multi-spectral imaging systems are more affordable and arleady exist in many circumstances (orbitting satellites).
 
 
 ## Applications
 
-Some of the most common applications of multi-spectral imaging include agricultural monitoring, environmental management, archaelogy, and large scale mining and production[[1]](#1). These industries will often use drone based imaging systems to monitor fertilization status, crop production, water retention in a field, and even the composition of the soil, among many other characteristics.
+Some of the most common applications of multi-spectral imaging include agricultural monitoring, environmental management, archaelogy, and large scale mining and production[[2]](#2). These industries will often use drone based imaging systems to monitor fertilization status, crop production, water retention in a field, and even the composition of the soil, among many other characteristics.
 
-One of the most well-known multi-spectral imaging systems and programs is NASA's Landsat[[2]](#2). Landsat 1 was launched in 1972, and to this point, there have been 8 different Landsat sattelitles, with a 9th being planned for launch on September 27, 2021. 
+One of the most well-known multi-spectral imaging systems and programs is NASA's Landsat[[3]](#3). Landsat 1 was launched in 1972, and to this point, there have been 8 different Landsat sattelitles, with a 9th being planned for launch on September 27, 2021. 
 
 The Landsat 8 for example has sensors that cover 11 different spectral bands, including blue, gree, red, NIR, SWIR, and thermal, among others. Not only do these projects provide data that benefits countless industries, but the production of these systems themselves (both the sensors and the carriers, whether satellites or drones) are massive economic projects that can help to sustain work in various industries directly (Landsat 9 was budgeted $650M by the US Congress).
 
+PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) is another NASA program utilizing hyperspectral satellite imagining for climate and environmental analysis, that also provides open access to calibrated sensor data[[4]](#4).
 
-## Literature review
 
-Some methods include detection of increased hue values in shadow regions compared to non-shadow regions. (https://ieeexplore.ieee.org/abstract/document/1343090)
+## Literature Review
 
-Some other methods use green and blue color detection, however with manual thresholds.
+Focusing on methods for shadow detection in multi-spectral imaging, one can consider traditional image processing methods, or methods that incorporate machine learning models (PCA, SVM, among others):
 
-Additionally, some other methods use different color spaces from RGB, including HSV, C1C2C3, etc. https://towardsdatascience.com/understand-and-visualize-color-spaces-to-improve-your-machine-learning-and-deep-learning-models-4ece80108526
+Summary of https://www.mdpi.com/2072-4292/13/4/736 - mining in Colombia [[5]](#5)
 
-As comprehensive as you can, research the different approaches and solutions in research community and industry
+Summary of https://www.mdpi.com/2072-4292/10/6/877 - PCA net (machine learning) [[6]](#6)
+
+Summary of https://ieeexplore.ieee.org/abstract/document/1343090 - urban images [[7]](#7)
+
+
 ## Open Source Research
 
 ### Open Source Data
 
-NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 (https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb)
+NASA's Open Data Portal includes datasets such as the Global Hyperspectral Imaging Spectral-library of Agricultural crops for Central Asia V001 [[8]](#8)
 
-Copernicus Open Access Hub https://scihub.copernicus.eu/dhus/#/home
+USDA Farm Service Agency National Agriculture Imagery Program [[9]](#9)
 
-
-
+Copernicus Open Access Hub [[[10]](#10)
 
 ### Open Source Implementations
 
-Research the different open source projects that touch the topic of your interest
+Fortunately, there are many openly available guides and courses for multi-sepctral image analysis, with a particulary detailed option bein the Earth Data Analytics Online Certificate. Among other topics, this course includes a section on multi-spectral remote sensing, with many additional references for further learning[[11]](#11).
 
 
-Cloud-Shadow-Detection-Based-on-Spectral-Indices
+OpenDroneMap is an open source toolkit that in 2020 recently added support for multi-spectral imaging. Building upon this, FIELDimageR is an R package designed to take drone images from agricultural settings and perform crop analysis, including multi-spectral imaging for the use of vegetation growth, soil disturbance, and water retention. FIELDimageR even includes functions to remove clouds and weeds from composite images[[12]](#12).
 
-Python -> OpenCV packages -> Rasterio (geospatial data formatted as rasters - bitmaps)
+Sourced from Zhai et al.(2018)[[13]](#13), a Python implementation of their algorithm was posted on GitHub for open access. This algorithm uses a 
 
-OpenDroneMap -> supports TIFFs where each layer is a specific spectral image
-https://www.opendronemap.org/2020/02/odm-0-9-8-adds-multispectral-16bit-tiffs-support-and-moar/
 
 #### Licensing Considerations
-OpenCV (Apache2 License)
-https://opencv.org/license/
-OpenCV automatically includes FFmpeg, which is licensed under LGPLv2.1
-Also includes other binaries:
 
-Rasterio:
-https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
+Many of these tools are built upon OpenCV, which is under the Apache2 license. OpenCV automatically includes FFmpeg, which is licensed under LGPLv2.1, and also includes many other binaries, with various licenses as well. For commercial products based on OpenCV, it is important and ultimately necessary to perform close evalutaion of licensing requirements for all tools used[[14]](#14).
+
+Rasterio, another common software tool has their own license posted online[[15]](#15).
+
+OpenDroneMap is licensed under GNU Affero General Public License v3.0, with specifications listed here[[16]](#16). 
 
 
 ## Reproduction of OS Results
 
+[[17]](#17)
+
+[[18]](#18)
 
 
 
 
 ## References
 <a id="1">[1]</a> 
+ColourLex. (2020, May 12). Multispectral imaging. ColourLex. Retrieved September 17, 2021
+https://colourlex.com/project/multispectral-imaging/. 
+
+<a id="2">[2]</a> 
 Rosalba Calvini, Alessandro Ulrici, José Manuel Amigo,
 Chapter 3.9 - Growing applications of hyperspectral and multispectral imaging,
 https://doi.org/10.1016/B978-0-444-63977-6.00024-9.
-<a id="1">[2]</a>
+
+<a id="3">[3]</a>
 Jenner, L. (2015, April 1). Landsat overview. NASA. 
 Retrieved September 16, 2021.
 https://www.nasa.gov/mission_pages/landsat/overview/index.html. 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
-<a id="1">[1]</a> 
 
+<a id="4">[4]</a> 
+NASA. (n.d.). Data products table. 
+NASA PACE - Data Products Table. Retrieved September 17, 2021
+https://pace.oceansciences.org/data_table.htm. 
 
-Google query dump for "multispectral imaging shadow" keyword search
+<a id="5">[5]</a> 
+Ibrahim E, Jiang J, Lema L, Barnabé P, Giuliani G, Lacroix P, Pirard E. Cloud and Cloud-Shadow Detection for Applications in Mapping Small-Scale Mining in Colombia Using Sentinel-2 Imagery. Remote 
+Sensing. 2021; 13(4):736. https://doi.org/10.3390/rs13040736
 
-https://www.sciencedirect.com/science/article/abs/pii/S0168169912000270
-https://www.researchgate.net/publication/225158053_Multi-spectral_False_Color_Shadow_Detection
-https://www.spiedigitallibrary.org/ebooks/PM/Computational-Color-Technology/14/Multispectral-Imaging/10.1117/3.660835.ch14?SSO=1
-https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10004/100040A/A-novel-method-to-detect-shadows-on-multispectral-images/10.1117/12.2241938.short?webSyncID=49a28531-ab0d-3a6b-03c9-7c009b6bcd74&sessionGUID=6b80d8e8-abee-aed6-ae05-c117aac5a919
-https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.6384&rep=rep1&type=pdf
-https://link.springer.com/chapter/10.1007/978-3-642-24393-6_10
-https://core.ac.uk/display/29409652
-http://etd.lib.metu.edu.tr/upload/12619166/index.pdf
+<a id="6">[6]</a> 
+Zi Y, Xie F, Jiang Z. A Cloud Detection Method for Landsat 8 Images Based on PCANet. Remote Sensing. 2018; 10(6):877. https://doi.org/10.3390/rs10060877
 
+<a id="7">[7]</a> 
+Jianjun Huang, Weixin Xie and Liang Tang, "Detection of and compensation for shadows in colored urban aerial images," Fifth World Congress on Intelligent Control and Automation (IEEE Cat. No.04EX788), 2004, pp. 3098-3100 Vol.4, doi: 10.1109/WCICA.2004.1343090.
+
+<a id="8">[8]</a> 
+https://data.nasa.gov/dataset/Global-Hyperspectral-Imaging-Spectral-library-of-A/gd67-qfeb
+
+<a id="9">[9]</a> 
+https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
+
+<a id="10">[10]</a> 
+https://scihub.copernicus.eu/dhus/#/home
+
+<a id="11">[11]</a> 
+https://www.earthdatascience.org/courses/use-data-open-source-python/multispectral-remote-sensing/intro-multispectral-data/ 
+
+<a id="12">[12]</a> 
+https://www.opendronemap.org/fieldimager/
+
+<a id="13">[13]</a> 
 https://github.com/ThomasWangWeiHong/Cloud-Shadow-Detection-Based-on-Spectral-Indices
 
-Topic
+<a id="14">[14]</a> 
+https://opencv.org/license/
 
-Shadows in aerial imaging can cause serious issues in 3D imaging -> leading to errors in object detection, agricultural analysis, building geometry detection, etc.
+<a id="15">[15]</a> 
+https://rasterio.readthedocs.io/en/latest/intro.html#rasterio-license
 
-Shadows arise both physical objects (trees, buildings, power lines, towers, diffuse shadows from trees, etc.) and cloud cover - much larger area of effect.
+<a id="16">[16]</a> 
+https://github.com/OpenDroneMap/ODM/blob/master/LICENSE
 
+<a id="17">[17]</a> 
+
+<a id="18">[18]</a> 
