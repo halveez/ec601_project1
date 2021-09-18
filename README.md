@@ -70,6 +70,8 @@ First, I needed to install Microsoft Visual C++ 14.0 tools. I then ran into some
 
 Ran into some additional issues with Anaconda and gdal, rasterio, and rioaxxary installation, and was ultimately unable to follow the guide to completion.
 
+Instead, I set up OpenDroneMap's WebODM system, and downloaded some shared multi-spectral datasets from their user forums, and set out to extract some 3D models from these aerial images.
+
 
 ## References
 
