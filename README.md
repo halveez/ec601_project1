@@ -64,9 +64,11 @@ OpenDroneMap is licensed under GNU Affero General Public License v3.0, with spec
 
 ## Reproduction of OS Results
 
-For this project, I reproduced the results in [[11]](#11), first by downloading the Cold Springs Fire data from the NAIP and following their guide to establishing a working environment in Python.
+For this project, I attempted to reproduce the results in [[11]](#11), first by downloading the Cold Springs Fire data from the NAIP and following their guide to establishing a working environment in Python.
 
+First, I needed to install Microsoft Visual C++ 14.0 tools. I then ran into some Python issues, and was advised to reinstall using Anacadona, additionally for troubleshooting Rasterio package installation.
 
+Ran into some additional issues with Anaconda and gdal, rasterio, and rioaxxary installation, and was ultimately unable to follow the guide to completion.
 
 
 ## References
