@@ -70,7 +70,7 @@ First, I needed to install Microsoft Visual C++ 14.0 tools. I then ran into some
 
 Ran into some additional issues with Anaconda and gdal, rasterio, and rioaxxary installation, and was ultimately unable to follow the guide to completion.
 
-Instead, I set up OpenDroneMap's WebODM system, and downloaded some shared multi-spectral datasets from their user forums, and set out to extract some 3D models from these aerial images.
+Instead, I set up OpenDroneMap's WebODM system, and downloaded some shared multi-spectral datasets from their user forums, and set out to extract some 3D models from these aerial images. Sourced from https://community.opendronemap.org/t/xmission-multispectral/7524. I first processed folders 01 and 03 separately, which consisted of a Green, Red, Red edge, NIR, and NDVI image for each position (5 bands). The data also included a 6th RGB image, however this was excluded as it was of different dimensions and WebODM failed processing when it was included.
 
 
 ## References
